@@ -4,7 +4,7 @@
 
   %title File Cabinet | Your life's work!
   = csrf_meta_tags
-  = csp_meta_tag 
+  = csp_meta_tag
   = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
   = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
 %body
@@ -20,7 +20,7 @@
         - else
           = link_to "Log In", new_user_session_path
 
-    %p.notice= notice
-    %p.alert= alert
+  %p.notice= notice
+  %p.alert= alert
 
-    =yield
+  =yield
